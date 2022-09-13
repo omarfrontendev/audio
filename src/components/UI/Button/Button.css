@@ -1,0 +1,9 @@
+.main__button {
+  color: var(--color__white);
+  border: none;
+  padding: 22px 47px;
+  border-radius: 40px;
+  background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__yellow) 100%);
+  font-size: var(--ft__16);
+  font-weight: var(--ft__W__bold);
+}

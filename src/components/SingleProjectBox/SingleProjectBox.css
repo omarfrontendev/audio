@@ -1,0 +1,52 @@
+.single__project__box {
+  padding: 0 10px;
+}
+.single__project__box img {
+  width: 100%;
+  display: block;
+  height: 381px;
+  width: 100%;
+  display: block;
+  height: 381px;
+  object-fit: cover;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+.single__project__box .project__img__container {
+  position: relative;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  overflow: hidden;
+  margin-bottom: 29px;
+}
+.single__project__box .project__img__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .3;
+  transition: .3s ease-in-out;
+}
+.single__project__box .project__img__container:hover img {
+  transform: scale(1.022222);
+}
+.single__project__box .project__img__container:hover::after {
+  opacity: 0;
+}
+.single__project__box .project__name {
+  font-size: var(--ft__22);
+  color: #3D3B42;
+  font-weight: var(--ft__W__bold);
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+  display: block;
+}
+.single__project__box .project__signer {
+  display: block;
+  color: var(--color__yellow);
+  font-size: var(--ft__17);
+  line-height: 20px;
+}

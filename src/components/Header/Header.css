@@ -1,0 +1,100 @@
+.main__header {
+  background-color: var(--color__darker__gray);
+  color: var(--color__white);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 30px;
+  /* background-color: #c1994d; */
+}
+.main__header .linkes {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 35px;
+}
+.main__header .linkes .link:not(.car__icon) {
+  font-size: var(--ft__14);
+  color: var(--color__white);
+  font-weight: var(--ft__W__bold);
+  position: relative;
+  transition: .3s ease;
+}
+.main__header .linkes .link::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, var(--color__gray) 0%, var(--color__yellow) 100%);
+  /* background: linear-gradient(270deg, var(--color__gray) 0%, var(--color__darker__gray) 100%); */
+  opacity: 0;
+  transition: .3s ease;
+  border-radius: 10px;
+}
+.main__header .linkes .link:hover {
+  color: var(--color__yellow);
+  /* color: var(--color__darker__gray); */
+}
+.main__header .linkes .link:hover::after {
+  opacity: 1;
+}
+.main__header .linkes .link.car__icon {
+  fill: var(--color__white);
+  transition: .3s ease;
+}
+.main__header .linkes .link.car__icon svg {
+  width: 20px;
+}
+.main__header .linkes .link.car__icon:hover {
+  fill: var(--color__yellow);
+  /* fill: var(--color__darker__gray); */
+}
+.open__btn,
+.close__btn {
+  display: none;
+}
+@media(max-width: 991px) {
+  .main__header .linkes {
+    column-gap: 20px;
+  }
+}
+
+@media(max-width: 767px) {
+  .main__header {
+    position: relative;
+  }
+  .main__header .linkes {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    flex-direction: column;
+    z-index: 100000;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    transform: translate(-100%);
+    transition: .3s ease-in-out;
+  }
+  .main__header .linkes.opened {
+    transform: translate(0);
+    opacity: 1;
+  } 
+  .open__btn,
+  .close__btn {
+    display: block;
+  } 
+  .close__btn {
+    color: #FFF;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

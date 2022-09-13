@@ -1,0 +1,23 @@
+.hero__sectoin {
+  width: 100%;
+  height: calc(100vh - 76px);
+}
+.hero__sectoin .slick-dots {
+  bottom: 20px;
+  column-gap: 20px;
+}
+.hero__sectoin .slick-dots li {
+  width: fit-content;
+  height: auto;
+  margin: 0;
+}
+.hero__sectoin .slick-dots li button {
+  width: 10px;
+  height: auto;
+}
+.hero__sectoin .slick-dots li.slick-active button:before {
+  color: var(--color__yellow);
+}
+@media(max-width: 575px) {
+  
+}

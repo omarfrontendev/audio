@@ -1,0 +1,41 @@
+.our__project__section {
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+}
+.image__bgk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.our__project__section .section__title {
+  margin: 0 auto 20px;
+}
+.our__project__section .our__project__subtitle {
+  color: #5C5C5C;
+  font-size: var(--ft__17);
+  line-height: 158.2%;
+  font-weight: var(--ft__W__regular);
+  margin-bottom: 24px;
+  width: 85%;
+  max-width: 510px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  position: relative;
+}
+.our__project__section .slick-list {
+  margin: 0 -10px;
+}
+.our__project__section .main__button {
+  position: relative;
+  margin-top: 40px;
+  padding: 19px 45px 20px 45px;
+}
+.our__project__section .main__button .ourproject__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}

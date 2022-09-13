@@ -1,0 +1,92 @@
+.quality__section {
+  margin-top: 130px;
+}
+.quality__content {
+  background-color: var(--color__darker__gray);
+  /* background-color: #343337; */
+  width: 100%;
+  padding: 27px 90px 42px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+.quality__content .quality__left__col {
+  text-align: right;
+}
+.quality__left__col .quality__title {
+  font-size: var(--ft__48);
+  line-height: 50px;
+  margin-bottom: 16px;
+  font-weight: var(--ft__W__bold);
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+.quality__left__col .quality__title span {
+  background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__yellow) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.quality__left__col .quality__subtitle {
+  color: #D3D3D5;
+  line-height: 1.6;
+  max-width: 470px;
+  text-align: right;
+  margin: 0 0 0 auto;
+}
+.quality__content .main__button {
+  padding: 19px 45px 20px 45px;
+}
+.quality__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  font-size: var(--ft__16);
+}
+.qulaty__rigth__text {
+  margin-top: 12px;
+  font-size: var(--ft__13);
+  line-height: 21px;
+  color: #D3D3D5;
+}
+.qulaty__rigth__text span {
+  font-weight: var(--ft__W__bold);
+  color: var(--color__yellow);
+}
+@media(max-width: 1199px) {
+  .quality__content {
+    padding: 27px 30px 42px;
+  }
+  .quality__left__col .quality__subtitle {
+    margin: 0;
+    text-align: left;
+  }
+  .quality__left__col .quality__title {
+    text-align: left;
+  }
+}
+@media(max-width: 991px) {
+  .quality__content {
+    padding: 20px;
+    column-gap: 18px;
+    flex-direction: column;
+  }
+  .quality__rigth__col {
+    margin: 20px 0;
+  }
+}
+@media(max-width: 575px) {
+  .quality__content .main__button{
+    padding: 20px 30px;
+  }
+  .quality__left__col .quality__title {
+    text-align: center;
+  }
+  .clients__page .clients__container .single__client {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
