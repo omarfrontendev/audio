@@ -6,7 +6,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 
 import './Header.css'
 
-const Header = () => {
+const Header = ({ page }) => {
 
   const [open, setOpen] = useState(false);
 
@@ -18,25 +18,25 @@ const Header = () => {
       </div>
       <ul className={`linkes ${open ? 'opened' : ''}`}>
         <button className='close__btn' onClick={() => setOpen(false)}><AiOutlineClose /></button>
-        <li className='link'>
+        <li className={`link ${page === 'ph' ? 'ph' : ''}`}>
           <a href="#">Home</a>
         </li>
-        <li className='link'>
+        <li className={`link ${page === 'ph' ? 'ph' : ''}`}>
           <a href="#">ABOUT US</a>
         </li>
-        <li className='link'>
+        <li className={`link ${page === 'ph' ? 'ph' : ''}`}>
           <a href="#">PROJECTS</a>
         </li>
-        <li className='link'>
+        <li className={`link ${page === 'ph' ? 'ph' : ''}`}>
           <a href="#">SERVICES</a>
         </li>
-        <li className='link'>
+        <li className={`link ${page === 'ph' ? 'ph' : ''}`}>
           <a href="#">TESTIMONIALS</a>
         </li>
-        <li className='link'>
+        <li className={`link ${page === 'ph' ? 'ph' : ''}`}>
           <a href="#">BLOG</a>
         </li>
-        <li className='link car__icon'>
+        <li className={`link car__icon ${page === 'ph' ? 'ph' : ''}`}>
           <a href="#"><CartIcon /></a>
         </li>
       </ul>

@@ -35,9 +35,15 @@
   transition: .3s ease;
   border-radius: 10px;
 }
+.main__header .linkes .link.ph::after {
+  background: linear-gradient(270deg, var(--color__gray) 0%, var(--color__purple) 100%);
+}
 .main__header .linkes .link:hover {
   color: var(--color__yellow);
   /* color: var(--color__darker__gray); */
+}
+.main__header .linkes .link.ph:hover {
+  color: var(--color__purple);
 }
 .main__header .linkes .link:hover::after {
   opacity: 1;
@@ -51,6 +57,10 @@
 }
 .main__header .linkes .link.car__icon:hover {
   fill: var(--color__yellow);
+  /* fill: var(--color__darker__gray); */
+}
+.main__header .linkes .link.car__icon.ph:hover {
+  fill: var(--color__purple);
   /* fill: var(--color__darker__gray); */
 }
 .open__btn,

@@ -69,7 +69,7 @@ const Photography = () => {
 
   return (
     <>
-      <Header />
+      <Header page='ph' />
       <HeroSection data={data} page={'photography'} />
       <div className="container">
         <VoicerSection data={aboutSection} page='photography' />
