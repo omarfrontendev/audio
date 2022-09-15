@@ -1,0 +1,59 @@
+.photography__team {
+  margin: 140px 0;
+}
+.photography__team .section__title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.photography__team .team__ph__subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.single__team__ph__box {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 30px;
+  display: flex !important;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+}
+.single__team__ph__box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: .3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.single__team__ph__box:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  transform: scale(1.02333333);
+}
+.single__team__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Poppins",sans-serif;
+}
+.single__team__data .team__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 14px;
+  font-size: 24px;
+}

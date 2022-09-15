@@ -9,7 +9,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import './Footer.css'
 
-const Footer = () => {
+const Footer = ({ type }) => {
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
@@ -26,8 +26,8 @@ const Footer = () => {
           <li><a data-aos="fade-up" data-aos-delay='200' href="#" target='_blank'>TESTIMONIALS</a></li>
           <li><a data-aos="fade-up" data-aos-delay='250' href="#" target='_blank'>BLOG</a></li>
         </ul>
-        <h2 className="footer__brand" data-aos="fade-up" data-aos-delay='400'>
-          <span>Audio</span>
+        <h2 className={`footer__brand ${type === 'Photography' ? 'ph' : ''}`} data-aos="fade-up" data-aos-delay='400'>
+          <span>{type}</span>
         </h2>
         <div className='footer__contact' data-aos="fade-up">
           <div>

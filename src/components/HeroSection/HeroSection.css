@@ -18,6 +18,6 @@
 .hero__sectoin .slick-dots li.slick-active button:before {
   color: var(--color__yellow);
 }
-@media(max-width: 575px) {
-  
+.hero__sectoin .hero__slick.ph .slick-dots li.slick-active button:before {
+  color: var(--color__purple);
 }

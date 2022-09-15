@@ -39,7 +39,14 @@
   font-family: 'Poppins', sans-serif;
 }
 .hero__content__text .hero__content__title span {
-  background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__yellow) 100%);
+  background: linear-gradient(270deg, var(--color__gray) 0%, var(--color__yellow) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .3s ease-in-out;
+}
+.hero__content.ph .hero__content__text .hero__content__title span {
+  background: linear-gradient(270deg, var(--color__gray) 0%, #e5309b 100%);
+  /* background: linear-gradient(270deg, var(--color__gray) 0%, var(--color__purple) 100%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

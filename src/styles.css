@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 a,
 button {
@@ -16,6 +17,7 @@ button {
   /* colors */
   --color__white: #FFF;
   --color__yellow: #DFA539;
+  --color__purple: #e5309b;
   --color__gray: #CBC9C9;
   --color__dark__gray: #504F4D;
   --color__darker__gray: #292929; 
@@ -26,6 +28,7 @@ button {
   --ft__16: 16px;
   --ft__20: 20px;
   --ft__22: 22px;
+  --ft__44: 44px;
   --ft__48: 48px;
   --ft__17: 17px;
   --ft__64: 64px;
@@ -63,10 +66,13 @@ button {
   background: linear-gradient(270deg, var(--color__darker__gray) 0%, var(--color__yellow) 100%);
   border-radius: 0 10px 10px 0;
 }
+.section__title.ph::after {
+  background: linear-gradient(270deg, var(--color__darker__gray) 0%, var(--color__purple) 100%);
+}
 .container {
   width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 @media(max-width: 1199px) {
   .container {

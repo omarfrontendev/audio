@@ -6,4 +6,10 @@
   background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__yellow) 100%);
   font-size: var(--ft__16);
   font-weight: var(--ft__W__bold);
+  transition: .3s linear;
+}
+.main__button.ph {
+  background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__purple) 100%);
+  /* color: var(--color__darker__gray); */
+  /* font-weight: 800; */
 }

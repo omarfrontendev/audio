@@ -39,6 +39,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.footer .footer__brand.ph span {
+  background: linear-gradient(270deg, var(--color__gray) 0%, var(--color__purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .footer__contact {
   display: flex;
   justify-content: space-between;
@@ -114,6 +119,11 @@
     justify-content: center;
   }
 }
+@media(max-width: 767px) {
+  .footer .footer__brand.ph {
+    font-size: 60px;
+  }
+}
 @media(max-width: 590px) {
   .footer__contact {
     flex-direction: column;
@@ -124,5 +134,8 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+  }
+  .footer .footer__brand.ph {
+    font-size: 40px;
   }
 }
