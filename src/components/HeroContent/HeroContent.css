@@ -37,6 +37,7 @@
   color: #fff;
   letter-spacing: -0.03em;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 .hero__content__text .hero__content__title span {
   background: linear-gradient(270deg, var(--color__gray) 0%, var(--color__yellow) 100%);
