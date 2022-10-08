@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/audio/static/css/main.eeb85d5c.css",
-    "main.js": "/audio/static/js/main.18039e91.js",
+    "main.css": "/audio/static/css/main.d10c1949.css",
+    "main.js": "/audio/static/js/main.89595a8d.js",
     "static/media/slide-1.jpg": "/audio/static/media/slide-1.5f7a026172a968fc7913.jpg",
     "static/media/bg_clients.jpg": "/audio/static/media/bg_clients.5750a006e8891e182a15.jpg",
     "static/media/img-video.png": "/audio/static/media/img-video.b1555c9f194621bd9a9c.png",
@@ -10,7 +10,11 @@
     "static/media/footer_bg.jpg": "/audio/static/media/footer_bg.5d528a8616d507cbece8.jpg",
     "static/media/bg_projects.jpg": "/audio/static/media/bg_projects.44f99792088ac368f139.jpg",
     "static/media/shutterstock_204682738.jpg": "/audio/static/media/shutterstock_204682738.8f2e4ac5ffd2aba41706.jpg",
+    "static/media/photogwhite.png": "/audio/static/media/photogwhite.53d27bf427ae2a546a2f.png",
+    "static/media/audwhite.png": "/audio/static/media/audwhite.654ee0545e96edbd76bb.png",
+    "static/media/tvwhite.png": "/audio/static/media/tvwhite.26407df908a439101f75.png",
     "static/media/hp-service-bg-1.jpg": "/audio/static/media/hp-service-bg-1.f47423763420611f15e5.jpg",
+    "static/media/headerlogowhite.png": "/audio/static/media/headerlogowhite.673ab58436c440895e7d.png",
     "static/media/hp-service-bg-2.jpg": "/audio/static/media/hp-service-bg-2.457bfb0fbd0cc0c2f818.jpg",
     "static/media/team-member-1-1.png": "/audio/static/media/team-member-1-1.e57e699c9825b5186616.png",
     "static/media/hp-service-bg-3.jpg": "/audio/static/media/hp-service-bg-3.f4ef7ea271d88aa3db63.jpg",
@@ -22,11 +26,11 @@
     "static/media/slick.ttf": "/audio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/audio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/audio/index.html",
-    "main.eeb85d5c.css.map": "/audio/static/css/main.eeb85d5c.css.map",
-    "main.18039e91.js.map": "/audio/static/js/main.18039e91.js.map"
+    "main.d10c1949.css.map": "/audio/static/css/main.d10c1949.css.map",
+    "main.89595a8d.js.map": "/audio/static/js/main.89595a8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.eeb85d5c.css",
-    "static/js/main.18039e91.js"
+    "static/css/main.d10c1949.css",
+    "static/js/main.89595a8d.js"
   ]
 }
