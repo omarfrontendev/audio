@@ -6,6 +6,7 @@ import Filming from './pages/Filming'
 import Photography from './pages/Photography'
 import ContactUsPage from './pages/ContactUsPage'
 import ButtonScrollUp from './components/ButtonScrollUp'
+import Distribution from './pages/Distribution'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/photography-page' element={<Photography />} />
         <Route path='/filming' element={<Filming />} />
         <Route path='/contact-us' element={<ContactUsPage />} />
+        <Route path='/distribution' element={<Distribution />} />
       </Routes>
       <ButtonScrollUp />
     </>

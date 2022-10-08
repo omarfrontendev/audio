@@ -28,6 +28,7 @@ const TVCommercials = ({
     style={{backgroundImage: `url(${image})`}}
     >
       {/* <di className='overlay'></di> */}
+      {/* <img className='hero__image' src={image || ''} alt="" /> */}
       <div className="container">
         <div className="content" data-aos="fade-right">
           <span className='commercial__subtitle'>NEW RELEASES</span>
