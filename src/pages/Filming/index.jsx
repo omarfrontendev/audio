@@ -54,7 +54,7 @@ const Filming = () => {
   const music = [
     {
       id: 1,
-      img: 'http://digiflex.themezinho.net/wp-content/uploads/2021/04/audiobook15.jpeg',
+      img: 'https://c4.wallpaperflare.com/wallpaper/502/419/818/the-dark-knight-batman-movies-wallpaper-preview.jpg',
       name: 'To Kill a Fae',
       rating: 7.1,
       type: 'DOLBY SURROUND'
@@ -127,7 +127,7 @@ const Filming = () => {
   const allMovies = [
     {
       id: 1,
-      img: 'http://digiflex.themezinho.net/wp-content/uploads/2020/12/slide01.jpg',
+      img: 'https://c4.wallpaperflare.com/wallpaper/502/419/818/the-dark-knight-batman-movies-wallpaper-preview.jpg',
       name: 'Inside Women',
       rating: 4.8,
       date: 2018,
