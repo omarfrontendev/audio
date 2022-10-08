@@ -21,7 +21,7 @@ const Filming = () => {
   const movies = [
     {
       id: 1,
-      img: 'http://digiflex.themezinho.net/wp-content/uploads/2020/12/slide01.jpg',
+      img: 'https://c4.wallpaperflare.com/wallpaper/502/419/818/the-dark-knight-batman-movies-wallpaper-preview.jpg',
       name: 'Inside Women',
       rating: 4.8,
       date: 2018,
