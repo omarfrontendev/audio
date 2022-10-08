@@ -2,6 +2,9 @@
   width: 100%;
   height: calc(100vh - 76px);
 }
+.hero__sectoin.tv {
+  height: 100vh;
+}
 .hero__sectoin .slick-dots {
   bottom: 20px;
   column-gap: 20px;
@@ -20,4 +23,8 @@
 }
 .hero__sectoin .hero__slick.ph .slick-dots li.slick-active button:before {
   color: var(--color__purple);
+}
+.hero__sectoin .hero__slick.tv .slick-dots li.slick-active button:before {
+  color: var(--color__dark__purple);
+  color: #FFF;
 }

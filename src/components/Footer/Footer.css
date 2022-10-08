@@ -1,5 +1,5 @@
 .footer {
-  padding: 130px 0 80px;
+  padding: 130px 0 40px;
   background-image: url('../images/footer_bg.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -21,6 +21,15 @@
 .footer ul li:hover {
   color: var(--color__yellow);
 }
+.footer ul li.Photography:hover {
+  color: var(--color__purple);
+}
+.footer ul li.TVFILM:hover {
+  color: var(--color__dark__purple);
+}
+.footer ul li.home:hover {
+  color: #743A50;
+}
 .footer ul li a {
   display: block;
 }
@@ -41,6 +50,11 @@
 }
 .footer .footer__brand.ph span {
   background: linear-gradient(270deg, var(--color__gray) 0%, var(--color__purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer .footer__brand.tv span {
+  background: linear-gradient(90deg, var(--color__dark__purple) 50%, var(--color__dark__gray) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -70,6 +84,7 @@
   row-gap: 10px;
   padding-left: 40px;
 }
+.contact a,
 .contact p {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -81,11 +96,20 @@
   align-items: center;
   justify-content: center;
   column-gap: 40px;
-  font-size: 24px;
+  font-size: 35px;
   padding: 30px 0 60px;
 }
 .footer__social a:hover {
   color: var(--color__yellow);
+}
+.footer__social a.Photography:hover {
+  color: var(--color__purple);
+}
+.footer__social a.TVFILM:hover {
+  color: var(--color__dark__purple);
+}
+.footer__social a.home:hover {
+  color: #743A50;
 }
 .copy__rigth {
   text-align: center;
@@ -95,7 +119,12 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
-
+.footer__logo {
+  margin: 40px auto 50px;
+  display: block;
+  width: 260px;
+  max-width: 100%;
+}
 @media(max-width: 1199px) {
   .footer ul {
     width: 800px;
@@ -125,6 +154,9 @@
   }
 }
 @media(max-width: 590px) {
+  .footer .footer__brand.tv {
+    font-size: 50px;
+  }
   .footer__contact {
     flex-direction: column;
     align-items: center;

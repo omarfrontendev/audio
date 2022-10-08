@@ -8,7 +8,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import './OurEngineers.css'
 
-const OurEngineers = () => {
+const OurEngineers = ({ id }) => {
 
   const enginners = [
     {
@@ -77,7 +77,7 @@ const OurEngineers = () => {
   }, []);
 
   return (
-    <section className='ourenginners__section'>
+    <section id={id} className='ourenginners__section'>
       <div className="container" data-aos="fade-up">
         <h2 className="section__title">Our Engineers</h2>
         <p className='section__subtitle'>

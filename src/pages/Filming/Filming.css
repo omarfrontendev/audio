@@ -1,0 +1,41 @@
+.tv__page .section__title {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+}
+.tv__page .section__title span {
+  color: var(--color__dark__purple);
+}
+.tv__page .section__title::after {
+  display: none;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  border-radius: 50px;
+}
+.filming__section {
+  margin: 120px auto;
+}
+.filming__section.movies {
+  background-color: #111111;
+  margin: 0;
+  padding: 80px 0;
+}
+.filming__section.movies .section__title {
+  color: var(--color__white);
+}
+.filming__section .cards__container {
+  display: grid;
+  gap: 20px;
+  row-gap: 40px;
+  margin-top: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-bottom: 40px;
+}
+.filming__section.movies .cards__container {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.filming__section .main__button {
+  margin: 0 auto;
+  display: block;
+}

@@ -1,0 +1,104 @@
+.movie__card {
+  position: relative;
+  width: 100%;
+  /* height: 200px;
+  overflow: hidden; */
+}
+.movie__card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s ease-in-out;
+}
+.movie__card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  z-index: 1;
+  transition: .3s ease-in-out;
+}
+.movie__card:hover img {
+  transform: scale(1.05555555);
+}
+.movie__card:hover .overlay {
+  opacity: .4;
+}
+.movie__card.movie__type .quality__rating,
+.movie__card:not(.movie__type) .quality {
+  position: relative;
+  width: fit-content;
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translate(-50%, 100px);
+  backdrop-filter: blur(10px);
+  white-space: pre;
+  color: var(--color__white);
+  z-index: 10;
+  transition: .3s ease-in-out;
+}
+.movie__card.movie__type:hover .quality__rating,
+.movie__card:hover:not(.movie__type) .quality{
+  transform: translate(-50%, 0px);
+} 
+.movie__card.movie__type .quality__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 90%;
+  backdrop-filter: none;
+}
+.movie__card.movie__type .quality__rating .rating {
+  width: 30px;
+  height: 30px;
+}
+.movie__card .card__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+.movie__card .card__details > span {
+  font-size: var(--ft__18);
+  font-weight: var(--ft__W__semi__bold);
+  font-family: "Poppins",sans-serif;
+  color: var(--color__dark__purple);
+}
+.movie__card .card__details > span:nth-child(2) {
+  padding: 4px 8px;
+  font-size: var(--ft__14);
+  background-color: var(--color__dark__purple);
+  color: var(--color__white);
+  border-radius: 4px;
+}
+.movie__card.movie__type .card__details > span {
+  color: var(--color__white);
+}
+.movie__card .category {
+  color: var(--color__dark__purple);
+  font-weight: var(--ft__W__semi__bold);
+  margin-top: 10px;
+  font-size: var(--ft__16);
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width: 575px) {
+  .filming__section.movies .cards__container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .movie__card .card__details {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

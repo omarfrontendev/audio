@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
 import Image1 from '../components/images/slide-1.jpg'
@@ -15,9 +15,14 @@ import ServiceIcon3 from '../components/images/hp-service-icon-3.png'
 import OurPhotographyWorks from '../components/OurPhotographyWorks'
 import PhotographyTeam from '../components/PhotographyTeam'
 import PhotographyBlogs from '../components/PhotographyBlogs'
+import Logo from '../components/images/photogwhite.png'
 import Footer from '../components/Footer'
 
 const Photography = () => {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
   const data = [
     {
@@ -41,7 +46,7 @@ const Photography = () => {
     subtitle: 'Lorem Ipsum decided to leave for the far World of Grammar. The Big   Oxmox advised.',
     text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, A large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     img: AboutImage
-  }
+  };
 
   const section1 = {
     title: 'PHOTOSHOOT SERVICES', 
@@ -49,7 +54,7 @@ const Photography = () => {
     overlayImage: ServiceOverlay1, 
     text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
     icon: ServiceIcon1
-  }
+  };
 
   const section2 = {
     title: 'PRODUCTION SERVICES', 
@@ -57,7 +62,7 @@ const Photography = () => {
     overlayImage: ServiceOverlay2, 
     text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
     icon: ServiceIcon2
-  }
+  };
 
   const section3 = {
     title: 'POST PRODUCTION', 
@@ -65,23 +70,63 @@ const Photography = () => {
     overlayImage: ServiceOverlay3, 
     text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
     icon: ServiceIcon3
-  }
+  };
+
+  const headerLinks = [
+    {
+      id: 1,
+      text: 'About Us',
+      section: 'about-us' 
+    },
+    {
+      id: 2,
+      text: 'Photoshoot',
+      section: 'services' 
+    },
+    {
+      id: 3,
+      text: 'Productio',
+      section: 'pro-services' 
+    },
+    {
+      id: 4,
+      text: 'Post',
+      section: 'post-services' 
+    },
+    {
+      id: 5,
+      text: 'Works',
+      section: 'our-works' 
+    },
+    {
+      id: 6,
+      text: 'Photographers',
+      section: 'photographers' 
+    },
+    {
+      id: 7,
+      text: 'Blogs',
+      section: 'blogs' 
+    },
+  ];
 
   return (
     <>
-      <Header page='ph' />
+      <Header page='ph' logo={Logo} links={headerLinks} />
       <HeroSection data={data} page={'photography'} />
-      <div className="container">
+      <div className="container" style={{overflow: 'hidden'}}>
         <VoicerSection data={aboutSection} page='photography' />
       </div>
-      <MainPhotografySection 
+      <MainPhotografySection
+        id='services'
         title={section1.title} 
         subtitle={section1.subtitle} 
         overlayImage={section1.overlayImage} 
         text={section1.text} 
         icon={section1.icon}
       />
-      <MainPhotografySection 
+      <MainPhotografySection
+        id='pro-services' 
         title={section2.title} 
         subtitle={section2.subtitle} 
         overlayImage={section2.overlayImage} 
@@ -89,16 +134,17 @@ const Photography = () => {
         icon={section2.icon}
       />
       <MainPhotografySection 
+        id='post-services' 
         title={section3.title} 
         subtitle={section3.subtitle} 
         overlayImage={section3.overlayImage} 
         text={section3.text} 
         icon={section3.icon}
       />
-      <OurPhotographyWorks />
-      <PhotographyTeam />
-      <PhotographyBlogs />
-      <Footer type='Photography' />
+      <OurPhotographyWorks id='our-works' />
+      <PhotographyTeam id='photographers' />
+      <PhotographyBlogs id='blogs'/>
+      <Footer type='Photography' links={headerLinks} />
     </>
   )
 }

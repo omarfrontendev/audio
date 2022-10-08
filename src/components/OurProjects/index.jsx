@@ -9,7 +9,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import './OurProjects.css'
 
-const OurProjects = () => {
+const OurProjects = ({ id }) => {
 
   const projects = [
     {
@@ -82,7 +82,7 @@ const OurProjects = () => {
   }, []);
 
   return (
-    <section className='our__project__section'>
+    <section id={id} className='our__project__section'>
       <div className="container">
         <img className='image__bgk' src={Image} alt='' />
         <h2 data-aos="fade-up" className='section__title'>Our Projects</h2>

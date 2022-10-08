@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import './PhotographyBlogs.css'
 
-const PhotographyBlogs = () => {
+const PhotographyBlogs = ({ id }) => {
 
   const blogs = [
     {
@@ -32,7 +32,7 @@ const PhotographyBlogs = () => {
   }, []);
 
   return (
-    <section className='photography__blogs'>
+    <section className='photography__blogs' id={id}>
       <div className="container">
         <h2 data-aos="fade-up" className="section__title ph">BLOG</h2>
         <p data-aos="fade-up" className='section__subtitle'>ARTICLE, NEWS, TIPS</p>

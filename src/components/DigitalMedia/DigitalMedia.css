@@ -1,0 +1,58 @@
+.digital__section {
+  margin: 120px auto;
+}
+.digital__content {
+  padding: 70px;
+  background-color: #12131a;
+  border-radius: 10px;
+}
+.digital__section .section__title span {
+  background: linear-gradient(90deg, #743A50 0%, #DEA439 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
+.digital__section .section__title {
+  color: var(--color__white);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 32px;
+  font-weight: var(--ft__W__bold);
+  line-height: 50px;
+  position: relative;
+  margin-bottom: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: -.03em;
+  font-weight: 600;
+}
+.digital__section .section__title::after {
+  display: none;
+}
+.digital__content .digital__btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  width: 668px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.digital__content .digital__btns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+  background-color: var(--color__dark__gray);
+  height: 48px;
+  color: var(--color__white);
+  font-size: 14px;
+  font-weight: var(--ft__W__semi__bold);
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.digital__content .digital__btns a:hover {
+  background: linear-gradient(90deg, #743A50 30%, #DEA439 140%);
+}
+.digital__content .digital__btns a .digital__icon {
+  font-size: 20px;
+}

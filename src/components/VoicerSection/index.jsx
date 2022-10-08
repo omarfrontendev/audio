@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./VoicerSection.css";
 
-const VoicerSection = ({ data, page }) => {
+const VoicerSection = ({ data, page, id }) => {
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
@@ -13,7 +13,7 @@ const VoicerSection = ({ data, page }) => {
 
 
   return (
-    <section className={`voicer__section ${page === 'photography' ?  'ph': ''}`}>
+    <section id={id} className={`voicer__section ${page === 'photography' ?  'ph': ''}`}>
       <div className="left__col" data-aos="fade-up">
         <div className="overlay__bgk">
          

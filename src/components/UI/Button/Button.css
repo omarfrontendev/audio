@@ -4,12 +4,16 @@
   padding: 22px 47px;
   border-radius: 40px;
   background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__yellow) 100%);
-  font-size: var(--ft__16);
+  font-size: var(--ft__18);
   font-weight: var(--ft__W__bold);
   transition: .3s linear;
 }
 .main__button.ph {
   background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__purple) 100%);
-  /* color: var(--color__darker__gray); */
-  /* font-weight: 800; */
+}
+.main__button.tv {
+  background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__dark__purple) 100%);
+}
+.main__button.home {
+  background: linear-gradient(90deg, #743A50 30%, #DEA439 140%);
 }

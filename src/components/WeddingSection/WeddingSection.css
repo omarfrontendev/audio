@@ -1,0 +1,36 @@
+.wedding__section {
+  margin: 120px auto;
+}
+.wedding__section .section__title span {
+  color: var(--color__dark__purple);
+  font-weight: 400;
+}
+.wedding__section .weddings__media {
+  display: grid;
+  grid-template-columns: calc(50% - (20px / 3)) calc(25% - (20px / 3)) calc(25% - (20px / 3));
+  gap: 10px;
+}
+.wedding__section .weddings__media div {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 300px;
+}
+.wedding__section .weddings__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s ease-in-out;
+}
+.wedding__section .weddings__media div:hover img {
+  transform: scale(1.055555555555) rotate(2deg);
+}
+
+@media(max-width: 767px) {
+  .wedding__section .weddings__media {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wedding__section .weddings__media > div {
+    flex-basis: 100%;
+  }
+}

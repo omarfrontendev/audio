@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import './OurClients.css'
 
-const OurClients = () => {
+const OurClients = ({ id }) => {
 
   const [showClient, setShowClient] = useState('');
 
@@ -134,7 +134,7 @@ const OurClients = () => {
   }, [])
 
   return (
-    <section className='clients__page'>
+    <section id={id} className='clients__page'>
       <div className="container">
         <h2 data-aos="fade-up" className='section__title'>Our Clients</h2>
         <div data-aos="fade-up" className='box__of__client__name'><span>{showClient}</span></div>

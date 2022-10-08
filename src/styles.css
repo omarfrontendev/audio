@@ -7,6 +7,10 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  min-height: 200vh;
+}
+html {
+  scroll-behavior: smooth;
 }
 a,
 button {
@@ -18,6 +22,7 @@ button {
   --color__white: #FFF;
   --color__yellow: #DFA539;
   --color__purple: #e5309b;
+  --color__dark__purple: #753B51;
   --color__gray: #CBC9C9;
   --color__dark__gray: #504F4D;
   --color__darker__gray: #292929; 
@@ -26,12 +31,14 @@ button {
   --ft__13: 13px;
   --ft__14: 14px;
   --ft__16: 16px;
+  --ft__18: 18px;
   --ft__20: 20px;
   --ft__22: 22px;
   --ft__44: 44px;
   --ft__48: 48px;
   --ft__17: 17px;
   --ft__64: 64px;
+  --ft__80: 80px;
 
   /* font Weigth */
 
@@ -68,6 +75,9 @@ button {
 }
 .section__title.ph::after {
   background: linear-gradient(270deg, var(--color__darker__gray) 0%, var(--color__purple) 100%);
+}
+.section__title.tv::after {
+  background: linear-gradient(270deg, var(--color__darker__gray) 0%, var(--color__dark__purple) 100%);
 }
 .container {
   width: 1200px;

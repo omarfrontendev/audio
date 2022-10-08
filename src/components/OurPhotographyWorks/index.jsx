@@ -8,7 +8,7 @@ import MainSlider from '../MainSlider';
 import "aos/dist/aos.css";
 import './OurPhotographyWorks.css'
 
-const OurPhotographyWorks = () => {
+const OurPhotographyWorks = ({ id }) => {
 
   const [all, setAll] = useState(false);
   const [openSlider, setOpenSider] = useState(false);
@@ -108,7 +108,7 @@ const OurPhotographyWorks = () => {
 
   return (
     <>
-      <section className='photography__works__section'>
+      <section className='photography__works__section' id={id}>
         <div className="ph__works__title" data-aos="fade-right">
           <h2 className="section__title ph">OUR WORKS</h2>
           <p className='ph__works__subtitle'>FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THEOCEAN.</p>
