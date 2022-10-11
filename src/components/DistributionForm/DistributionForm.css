@@ -1,0 +1,95 @@
+.distribution__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.distribution__form .form_box {
+  background-color: #D7E0F4;
+}
+.distribution__form .form_box h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  background-color: #003AAB;
+  padding: 10px 20px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.distribution__form .form_box h2 div {
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 10px;
+}
+.form_box .checkbox__inputs__group,
+.form_box .inputs__group {
+  padding: 0px 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+}
+.form_box .checkbox__inputs__group {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+}
+.form_box .checkbox__inputs__group .checkbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+}
+.form_box .checkbox__inputs__group .checkbox label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  text-align: center; 
+  cursor: pointer;
+}
+.form_box .checkbox__inputs__group .checkbox img {
+  width: 40px;
+  margin-bottom: 4px;
+  display: block;
+}
+.form_box .checkbox__inputs__group .checkbox input {
+  cursor: pointer;
+}
+.form_box .inputs__group .input__controle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.input__controle label {
+  font-size: 16px;
+  font-weight: 600;
+}
+.input__controle select {
+  background-color: #FFF;
+  padding: 10px 12px;
+  border: none;
+  outline: none;
+}
+.input__controle input {
+  all: unset;
+  background-color: #FFF;
+  padding: 10px 12px;
+}
+.distribution__form .submit__btn {
+  margin: 20px auto;
+  color: #FFF;
+  background-color: #003AAB;
+  font-size: 18px;
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  border-radius: 4px;
+  opacity: .6;
+  transition: .3s linear;
+}
+.distribution__form .submit__btn:hover {
+  opacity: 1;
+}
