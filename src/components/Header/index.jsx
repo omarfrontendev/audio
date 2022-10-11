@@ -34,6 +34,9 @@ const Header = ({ page, logo, links }) => {
               <Link to='/contact-us' href={`#social`}>Contact Us</Link>
             </li>
             <li className={`link ${page}`}>
+              <Link to='/distribution' href={`#social`}>distribution</Link>
+            </li>
+            <li className={`link ${page}`}>
               <a href={`#social`}>Social</a>
             </li>
             <li className={`link car__icon ${page}`}>
